@@ -562,7 +562,7 @@
   font-weight: 700;
   text-decoration: none;
 }
-.index-copy-reference {
+.index-copy-refereence-projects {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1981,7 +1981,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
 }
 .index-copy-footer1 {
-  width: 959px;
+  width: 100%;
   display: flex;
   align-self: center;
   align-items: flex-start;
@@ -2077,18 +2077,6 @@
   text-decoration: none;
 }
 .index-copy-fit-out4 {
-  color: var(--dl-color-gray-white);
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  font-size: 16px;
-  font-style: normal;
-  text-align: center;
-  font-weight: 500;
-  padding-left: 16px;
-  text-decoration: none;
-}
-.index-copy-architecture {
   color: var(--dl-color-gray-white);
   width: 100%;
   cursor: pointer;
