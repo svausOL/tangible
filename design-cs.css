@@ -1776,7 +1776,7 @@
 .design-cs-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1814,25 +1814,52 @@
   font-family: Karla;
   line-height: 24px;
 }
-.design-cs-find1 {
+.design-cs-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.design-cs-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.design-cs-find1:hover {
+.design-cs-email:hover {
+  opacity: 0.5;
+}
+.design-cs-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.design-cs-call:hover {
   opacity: 0.5;
 }
 .design-cs-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1840,7 +1867,7 @@
 }
 .design-cs-content13 {
   gap: 120px;
-  width: auto;
+  width: 100%;
   display: flex;
   position: relative;
   max-width: 1440px;
@@ -2000,6 +2027,7 @@
   color: rgb(118, 105, 104);
   font-size: 12px;
   align-self: center;
+  text-decoration: none;
 }
 @media(max-width: 991px) {
   .design-cs-video {
@@ -2016,14 +2044,9 @@
   .design-cs-content {
     height: 506px;
   }
-  .design-cs-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .design-cs-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .design-cs-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -2429,6 +2452,12 @@
   .design-cs-header13 {
     color: rgb(255, 255, 255);
   }
+  .design-cs-email {
+    border-radius: 90px;
+  }
+  .design-cs-call {
+    border-radius: 90px;
+  }
   .design-cs-footer {
     padding-left: var(--dl-space-space-sixunits);
     padding-right: var(--dl-space-space-sixunits);
@@ -2487,7 +2516,7 @@
   .design-cs-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -2886,6 +2915,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .design-cs-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .design-cs-content13 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2918,29 +2950,16 @@
     height: 625px;
   }
   .design-cs-navbar {
-    height: 128px;
+    height: 135px;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    align-items: center;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .design-cs-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .design-cs-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    align-items: center;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .design-cs-mobile-menu {
     padding: 16px;
@@ -3416,18 +3435,23 @@
   .design-cs-text099 {
     text-decoration: underline;
   }
+  .design-cs-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
   .design-cs-content13 {
-    width: auto;
+    width: 450px;
   }
   .design-cs-footer1 {
-    width: 308px;
+    width: 300px;
+    padding-left: var(--dl-space-space-unit);
   }
   .design-cs-caption8 {
     font-size: 9px;
   }
-  .design-cs-copyright {
-    color: rgb(118, 105, 104);
-    font-size: 11px;
-    text-align: center;
+  .design-cs-links2 {
+    width: auto;
+    align-self: flex-start;
+    margin-right: 0px;
+    padding-left: var(--dl-space-space-twounits);
   }
 }

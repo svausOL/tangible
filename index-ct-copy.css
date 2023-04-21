@@ -1014,7 +1014,7 @@
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .index-ct-copy-main1 {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-twounits);
   width: auto;
   height: auto;
   display: flex;
@@ -1515,7 +1515,7 @@
   padding-bottom: var(--dl-space-space-fiveunits);
 }
 .index-ct-copy-c1-contractor {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1581,7 +1581,7 @@
   width: 100%;
 }
 .index-ct-copy-ksxd {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1644,7 +1644,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
 }
 .index-ct-copy-gstc {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1708,7 +1708,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
 }
 .index-ct-copy-investment-license {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1808,7 +1808,7 @@
   object-fit: cover;
 }
 .index-ct-copy-business-license {
-  gap: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
   display: flex;
@@ -1869,7 +1869,7 @@
 }
 .index-ct-copy-video6 {
   width: 100%;
-  height: 1660px;
+  height: auto;
 }
 .index-ct-copy-link1 {
   display: contents;
@@ -1891,6 +1891,7 @@
   font-size: 18px;
   max-width: 800px;
   font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
   font-family: Cormorant Infant;
   font-weight: 600;
   line-height: 18px;
@@ -1911,7 +1912,7 @@
 .index-ct-copy-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1949,20 +1950,48 @@
   font-family: Karla;
   line-height: 24px;
 }
-.index-ct-copy-find1 {
+.index-ct-copy-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.index-ct-copy-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.index-ct-copy-find1:hover {
+.index-ct-copy-email:hover {
+  opacity: 0.5;
+}
+.index-ct-copy-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.index-ct-copy-call:hover {
   opacity: 0.5;
 }
 .index-ct-copy-footer {
@@ -2571,6 +2600,12 @@
   .index-ct-copy-header14 {
     color: rgb(255, 255, 255);
   }
+  .index-ct-copy-email {
+    border-radius: 90px;
+  }
+  .index-ct-copy-call {
+    border-radius: 90px;
+  }
   .index-ct-copy-footer {
     padding-left: var(--dl-space-space-sixunits);
     padding-right: var(--dl-space-space-sixunits);
@@ -3172,6 +3207,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .index-ct-copy-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .index-ct-copy-content09 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -3530,12 +3568,16 @@
     line-height: 20px;
   }
   .index-ct-copy-business-license {
-    height: 939px;
+    height: auto;
   }
   .index-ct-copy-video-wrapper4 {
-    height: 738px;
+    height: auto;
+  }
+  .index-ct-copy-tint5 {
+    height: auto;
   }
   .index-ct-copy-heading13 {
+    width: 100%;
     margin-top: 0px;
     padding-top: var(--dl-space-space-unit);
   }
@@ -3567,7 +3609,17 @@
   .index-ct-copy-text140 {
     text-decoration: underline;
   }
+  .index-ct-copy-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .index-ct-copy-content09 {
+    width: 450px;
+  }
   .index-ct-copy-footer1 {
-    width: 308px;
+    width: 300px;
+  }
+  .index-ct-copy-links2 {
+    width: auto;
+    padding-left: var(--dl-space-space-twounits);
   }
 }

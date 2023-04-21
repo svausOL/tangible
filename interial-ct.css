@@ -142,7 +142,6 @@
   padding: 32px;
   z-index: 1000;
   position: fixed;
-  padding-left: 32px;
   flex-direction: column;
   background-size: cover;
   justify-content: space-between;
@@ -1161,7 +1160,7 @@
 .interial-ct-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1199,25 +1198,52 @@
   font-family: Karla;
   line-height: 24px;
 }
-.interial-ct-find1 {
+.interial-ct-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.interial-ct-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.interial-ct-find1:hover {
+.interial-ct-email:hover {
+  opacity: 0.5;
+}
+.interial-ct-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.interial-ct-call:hover {
   opacity: 0.5;
 }
 .interial-ct-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1413,14 +1439,9 @@
   .interial-ct-content {
     height: 508px;
   }
-  .interial-ct-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .interial-ct-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .interial-ct-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1601,6 +1622,12 @@
   .interial-ct-header3 {
     color: rgb(255, 255, 255);
   }
+  .interial-ct-email {
+    border-radius: 90px;
+  }
+  .interial-ct-call {
+    border-radius: 90px;
+  }
   .interial-ct-footer {
     padding-left: var(--dl-space-space-sixunits);
     padding-right: var(--dl-space-space-sixunits);
@@ -1667,7 +1694,7 @@
   .interial-ct-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -1836,6 +1863,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .interial-ct-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .interial-ct-content4 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -1877,27 +1907,16 @@
     height: 625px;
   }
   .interial-ct-navbar {
-    height: auto;
+    height: 135px;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .interial-ct-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .interial-ct-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .interial-ct-mobile-menu {
     padding: 16px;
@@ -2083,7 +2102,17 @@
   .interial-ct-text11 {
     text-decoration: underline;
   }
+  .interial-ct-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .interial-ct-content4 {
+    width: 450px;
+  }
   .interial-ct-footer1 {
-    width: 308px;
+    width: 300px;
+  }
+  .interial-ct-links2 {
+    width: auto;
+    padding-left: var(--dl-space-space-twounits);
   }
 }

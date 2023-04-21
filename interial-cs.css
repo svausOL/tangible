@@ -1156,7 +1156,7 @@
 .interial-cs-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1194,25 +1194,52 @@
   font-family: Karla;
   line-height: 24px;
 }
-.interial-cs-find1 {
+.interial-cs-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.interial-cs-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.interial-cs-find1:hover {
+.interial-cs-email:hover {
+  opacity: 0.5;
+}
+.interial-cs-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.interial-cs-call:hover {
   opacity: 0.5;
 }
 .interial-cs-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1220,7 +1247,7 @@
 }
 .interial-cs-content4 {
   gap: 120px;
-  width: auto;
+  width: 100%;
   display: flex;
   position: relative;
   max-width: 1440px;
@@ -1380,6 +1407,7 @@
   color: rgb(118, 105, 104);
   font-size: 12px;
   align-self: center;
+  text-decoration: none;
 }
 @media(max-width: 991px) {
   .interial-cs-video {
@@ -1404,14 +1432,9 @@
   .interial-cs-content {
     height: 506px;
   }
-  .interial-cs-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .interial-cs-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .interial-cs-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1589,6 +1612,12 @@
   .interial-cs-header3 {
     color: rgb(255, 255, 255);
   }
+  .interial-cs-email {
+    border-radius: 90px;
+  }
+  .interial-cs-call {
+    border-radius: 90px;
+  }
   .interial-cs-footer {
     padding-left: var(--dl-space-space-sixunits);
     padding-right: var(--dl-space-space-sixunits);
@@ -1657,7 +1686,7 @@
   .interial-cs-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -1829,6 +1858,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .interial-cs-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .interial-cs-content4 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -1873,29 +1905,16 @@
     height: 625px;
   }
   .interial-cs-navbar {
-    height: 128px;
+    height: 135px;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    align-items: center;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .interial-cs-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .interial-cs-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    align-items: center;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .interial-cs-mobile-menu {
     padding: 16px;
@@ -2072,18 +2091,23 @@
   .interial-cs-text07 {
     text-decoration: underline;
   }
+  .interial-cs-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
   .interial-cs-content4 {
-    width: auto;
+    width: 450px;
   }
   .interial-cs-footer1 {
-    width: 308px;
+    width: 300px;
+    padding-left: var(--dl-space-space-unit);
   }
   .interial-cs-caption2 {
     font-size: 9px;
   }
-  .interial-cs-copyright {
-    color: rgb(118, 105, 104);
-    font-size: 11px;
-    text-align: center;
+  .interial-cs-links2 {
+    width: auto;
+    align-self: flex-start;
+    margin-right: 0px;
+    padding-left: var(--dl-space-space-twounits);
   }
 }

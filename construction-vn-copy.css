@@ -1177,7 +1177,7 @@
   font-family: Karla;
   line-height: 27px;
 }
-.construction-vn-copy-text33 {
+.construction-vn-copy-text36 {
   color: var(--dl-color-gray-black);
   font-size: 18px;
   font-family: Karla;
@@ -1296,7 +1296,7 @@
 .construction-vn-copy-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1334,10 +1334,10 @@
   font-family: Karla;
   line-height: 24px;
 }
-.construction-vn-copy-text47 {
+.construction-vn-copy-text50 {
   text-decoration: underline;
 }
-.construction-vn-copy-text51 {
+.construction-vn-copy-text54 {
   text-decoration: underline;
 }
 .construction-vn-copy-find1 {
@@ -1649,17 +1649,23 @@
     width: 100%;
     height: auto;
     max-width: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: flex-start;
-    padding-top: var(--dl-space-space-twounits);
+    padding-top: 0px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .construction-vn-copy-header {
+    color: var(--dl-color-gray-black);
     width: auto;
     font-size: 40px;
     align-self: center;
-    margin-top: var(--dl-space-space-halfunit);
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
-    padding-top: var(--dl-space-space-halfunit);
+    font-family: Cormorant Infant;
+    font-weight: 800;
+    line-height: 45px;
+    padding-top: 0px;
   }
   .construction-vn-copy-kenda-3 {
     gap: var(--dl-space-space-twounits);
@@ -1673,6 +1679,8 @@
   }
   .construction-vn-copy-header1 {
     width: 651px;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-copy-kendalogo {
     width: 100%;
@@ -1683,6 +1691,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-vn-copy-header2 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-copy--flogo {
     width: 100%;
@@ -1697,6 +1709,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-vn-copy-header3 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-copy-kendalogo1 {
     width: 100%;
@@ -1715,6 +1731,8 @@
   .construction-vn-copy-header4 {
     color: var(--dl-color-gray-black);
     width: auto;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-copy--adamslogo {
     width: var(--dl-size-size-xxlarge);
@@ -1879,7 +1897,8 @@
   }
   .construction-vn-copy-reference-projects {
     height: auto;
-    padding-top: var(--dl-space-space-unit);
+    margin-top: var(--dl-space-space-sixunits);
+    padding-top: 0px;
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
@@ -1887,10 +1906,10 @@
   .construction-vn-copy-header {
     font-size: 40px;
     align-self: center;
-    margin-top: 0px;
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
-    line-height: 40px;
-    padding-top: var(--dl-space-space-twounits);
+    line-height: 45px;
+    padding-top: 0px;
   }
   .construction-vn-copy-content1 {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1961,7 +1980,7 @@
     font-size: 32px;
     line-height: 30px;
   }
-  .construction-vn-copy-text36 {
+  .construction-vn-copy-text39 {
     font-size: 32px;
     line-height: 30px;
   }
@@ -2111,15 +2130,16 @@
   .construction-vn-copy-reference-projects {
     width: 100%;
     height: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: center;
-    padding-top: var(--dl-space-space-fourunits);
+    padding-top: 0px;
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .construction-vn-copy-header {
     color: var(--dl-color-gray-black);
-    font-size: 40px;
+    font-size: 27px;
     align-self: center;
     font-style: normal;
     margin-top: var(--dl-space-space-twounits);
@@ -2139,7 +2159,7 @@
   }
   .construction-vn-copy-header1 {
     color: rgb(53, 43, 42);
-    font-size: 32px;
+    font-size: 27px;
     font-style: normal;
     font-family: Cormorant Infant;
     font-weight: 700;
@@ -2172,6 +2192,9 @@
   .construction-vn-copy-sf {
     width: 100%;
   }
+  .construction-vn-copy-header2 {
+    font-size: 27px;
+  }
   .construction-vn-copy--flogo {
     width: 100%;
     height: auto;
@@ -2199,6 +2222,9 @@
   .construction-vn-copy-hci {
     width: 100%;
   }
+  .construction-vn-copy-header3 {
+    font-size: 27px;
+  }
   .construction-vn-copy-kendalogo1 {
     width: 100%;
     height: auto;
@@ -2225,6 +2251,9 @@
   }
   .construction-vn-copy-grand-ocean {
     width: 100%;
+  }
+  .construction-vn-copy-header4 {
+    font-size: 27px;
   }
   .construction-vn-copy--adamslogo {
     width: var(--dl-size-size-xxlarge);
@@ -2260,10 +2289,10 @@
   .construction-vn-copy-caption4 {
     color: rgb(255, 255, 255);
   }
-  .construction-vn-copy-text47 {
+  .construction-vn-copy-text50 {
     text-decoration: underline;
   }
-  .construction-vn-copy-text51 {
+  .construction-vn-copy-text54 {
     text-decoration: underline;
   }
   .construction-vn-copy-footer1 {

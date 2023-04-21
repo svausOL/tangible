@@ -764,7 +764,7 @@
 }
 .construction-cs-dropdown-toggle14 {
   fill: #595959;
-  color: #595959;
+  color: var(--dl-color-gray-black);
   width: 100%;
   display: inline-flex;
   align-items: center;
@@ -1289,7 +1289,7 @@
 .construction-cs-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1327,25 +1327,52 @@
   font-family: Karla;
   line-height: 24px;
 }
-.construction-cs-find1 {
+.construction-cs-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.construction-cs-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.construction-cs-find1:hover {
+.construction-cs-email:hover {
+  opacity: 0.5;
+}
+.construction-cs-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.construction-cs-call:hover {
   opacity: 0.5;
 }
 .construction-cs-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1353,7 +1380,7 @@
 }
 .construction-cs-content5 {
   gap: 120px;
-  width: auto;
+  width: 100%;
   display: flex;
   position: relative;
   max-width: 1440px;
@@ -1513,6 +1540,7 @@
   color: rgb(118, 105, 104);
   font-size: 12px;
   align-self: center;
+  text-decoration: none;
 }
 @media(max-width: 991px) {
   .construction-cs-video {
@@ -1526,14 +1554,9 @@
     opacity: 1;
     position: absolute;
   }
-  .construction-cs-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .construction-cs-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .construction-cs-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1640,22 +1663,23 @@
     width: 100%;
     height: auto;
     max-width: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: flex-start;
-    padding-top: var(--dl-space-space-twounits);
+    padding-top: 0px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .construction-cs-header {
     color: var(--dl-color-gray-black);
     width: auto;
-    font-size: 90px;
+    font-size: 40px;
     align-self: center;
     font-style: normal;
-    margin-top: var(--dl-space-space-halfunit);
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
     font-family: Cormorant Infant;
     font-weight: 800;
-    line-height: 60px;
-    padding-top: var(--dl-space-space-halfunit);
+    line-height: 40px;
+    padding-top: 0px;
   }
   .construction-cs-kenda-3 {
     gap: var(--dl-space-space-twounits);
@@ -1669,6 +1693,8 @@
   }
   .construction-cs-header1 {
     width: auto;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-cs-kendalogo {
     width: 100%;
@@ -1679,6 +1705,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-cs-header2 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-cs--flogo {
     width: 100%;
@@ -1692,6 +1722,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-cs-header3 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-cs-kendalogo1 {
     width: 100%;
@@ -1709,6 +1743,8 @@
   .construction-cs-header4 {
     color: var(--dl-color-gray-black);
     width: auto;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-cs--adamslogo {
     width: var(--dl-size-size-xxlarge);
@@ -1720,6 +1756,12 @@
   }
   .construction-cs-header5 {
     color: rgb(255, 255, 255);
+  }
+  .construction-cs-email {
+    border-radius: 90px;
+  }
+  .construction-cs-call {
+    border-radius: 90px;
   }
   .construction-cs-footer {
     padding-left: var(--dl-space-space-sixunits);
@@ -1778,7 +1820,7 @@
   .construction-cs-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -1868,7 +1910,8 @@
   }
   .construction-cs-reference-projects {
     height: auto;
-    padding-top: var(--dl-space-space-unit);
+    margin-top: var(--dl-space-space-sixunits);
+    padding-top: 0px;
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
@@ -1876,10 +1919,10 @@
   .construction-cs-header {
     font-size: 40px;
     align-self: center;
-    margin-top: 0px;
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
     line-height: 40px;
-    padding-top: var(--dl-space-space-twounits);
+    padding-top: 0px;
   }
   .construction-cs-content1 {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1980,6 +2023,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .construction-cs-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .construction-cs-content5 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2007,27 +2053,16 @@
     height: 139px;
   }
   .construction-cs-navbar {
-    height: auto;
+    height: 135px;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .construction-cs-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .construction-cs-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .construction-cs-mobile-menu {
     padding: 16px;
@@ -2100,6 +2135,7 @@
   .construction-cs-reference-projects {
     width: 100%;
     height: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: center;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: 12px;
@@ -2111,7 +2147,7 @@
     font-size: 40px;
     align-self: center;
     font-style: normal;
-    margin-top: var(--dl-space-space-twounits);
+    margin-top: 0px;
     text-align: center;
     font-family: Cormorant Infant;
     font-weight: 800;
@@ -2253,18 +2289,23 @@
   .construction-cs-text56 {
     text-decoration: underline;
   }
+  .construction-cs-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
   .construction-cs-content5 {
-    width: auto;
+    width: 450px;
   }
   .construction-cs-footer1 {
-    width: 308px;
+    width: 300px;
+    padding-left: var(--dl-space-space-unit);
   }
   .construction-cs-caption5 {
     font-size: 9px;
   }
-  .construction-cs-copyright {
-    color: rgb(118, 105, 104);
-    font-size: 11px;
-    text-align: center;
+  .construction-cs-links2 {
+    width: auto;
+    align-self: flex-start;
+    margin-right: 0px;
+    padding-left: var(--dl-space-space-twounits);
   }
 }

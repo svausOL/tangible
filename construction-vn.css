@@ -67,7 +67,8 @@
   max-width: 1440px;
   align-self: center;
   align-items: center;
-  padding-top: 11px;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: space-between;
 }
 .construction-vn-container1 {
@@ -764,7 +765,7 @@
 }
 .construction-vn-dropdown-toggle14 {
   fill: #595959;
-  color: #595959;
+  color: var(--dl-color-gray-black);
   width: 100%;
   display: inline-flex;
   align-items: center;
@@ -1177,7 +1178,7 @@
   font-family: Karla;
   line-height: 27px;
 }
-.construction-vn-text33 {
+.construction-vn-text38 {
   color: var(--dl-color-gray-black);
   font-size: 18px;
   font-family: Karla;
@@ -1296,7 +1297,7 @@
 .construction-vn-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1334,31 +1335,58 @@
   font-family: Karla;
   line-height: 24px;
 }
-.construction-vn-text47 {
+.construction-vn-text52 {
   text-decoration: underline;
 }
-.construction-vn-text51 {
+.construction-vn-text56 {
   text-decoration: underline;
 }
-.construction-vn-find1 {
+.construction-vn-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.construction-vn-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.construction-vn-find1:hover {
+.construction-vn-email:hover {
+  opacity: 0.5;
+}
+.construction-vn-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.construction-vn-call:hover {
   opacity: 0.5;
 }
 .construction-vn-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1443,7 +1471,6 @@
   text-align: center;
   font-weight: 500;
   padding-left: 16px;
-  text-decoration: underline;
 }
 .construction-vn-industrial1 {
   color: var(--dl-color-gray-white);
@@ -1455,7 +1482,6 @@
   text-align: center;
   font-weight: 500;
   padding-left: 16px;
-  text-decoration: underline;
 }
 .construction-vn-development4 {
   color: var(--dl-color-gray-white);
@@ -1535,14 +1561,9 @@
     opacity: 1;
     position: absolute;
   }
-  .construction-vn-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .construction-vn-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .construction-vn-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1590,6 +1611,12 @@
     padding-bottom: 2px;
   }
   .construction-vn-industrial {
+    color: var(--dl-color-gray-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .construction-vn-text {
     color: var(--dl-color-gray-black);
     font-size: 20px;
     font-style: normal;
@@ -1649,17 +1676,23 @@
     width: 100%;
     height: auto;
     max-width: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: flex-start;
-    padding-top: var(--dl-space-space-twounits);
+    padding-top: 0px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .construction-vn-header {
+    color: var(--dl-color-gray-black);
     width: auto;
     font-size: 40px;
     align-self: center;
-    margin-top: var(--dl-space-space-halfunit);
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
-    padding-top: var(--dl-space-space-halfunit);
+    font-family: Cormorant Infant;
+    font-weight: 800;
+    line-height: 45px;
+    padding-top: 0px;
   }
   .construction-vn-kenda-3 {
     gap: var(--dl-space-space-twounits);
@@ -1673,6 +1706,8 @@
   }
   .construction-vn-header1 {
     width: 651px;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-kendalogo {
     width: 100%;
@@ -1683,6 +1718,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-vn-header2 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn--flogo {
     width: 100%;
@@ -1697,6 +1736,10 @@
     gap: var(--dl-space-space-twounits);
     align-items: flex-start;
     flex-direction: column;
+  }
+  .construction-vn-header3 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn-kendalogo1 {
     width: 100%;
@@ -1715,6 +1758,8 @@
   .construction-vn-header4 {
     color: var(--dl-color-gray-black);
     width: auto;
+    font-size: 32px;
+    line-height: 32px;
   }
   .construction-vn--adamslogo {
     width: var(--dl-size-size-xxlarge);
@@ -1731,6 +1776,12 @@
   }
   .construction-vn-header5 {
     color: rgb(255, 255, 255);
+  }
+  .construction-vn-email {
+    border-radius: 90px;
+  }
+  .construction-vn-call {
+    border-radius: 90px;
   }
   .construction-vn-footer {
     padding-left: var(--dl-space-space-sixunits);
@@ -1789,7 +1840,7 @@
   .construction-vn-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -1842,6 +1893,12 @@
     font-style: normal;
     font-weight: 500;
   }
+  .construction-vn-text {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
   .construction-vn-development1 {
     color: var(--dl-color-gray-black);
     font-size: 16px;
@@ -1879,7 +1936,8 @@
   }
   .construction-vn-reference-projects {
     height: auto;
-    padding-top: var(--dl-space-space-unit);
+    margin-top: var(--dl-space-space-sixunits);
+    padding-top: 0px;
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
@@ -1887,10 +1945,10 @@
   .construction-vn-header {
     font-size: 40px;
     align-self: center;
-    margin-top: 0px;
+    margin-top: var(--dl-space-space-twounits);
     text-align: center;
-    line-height: 40px;
-    padding-top: var(--dl-space-space-twounits);
+    line-height: 45px;
+    padding-top: 0px;
   }
   .construction-vn-content1 {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -1961,7 +2019,7 @@
     font-size: 32px;
     line-height: 30px;
   }
-  .construction-vn-text36 {
+  .construction-vn-text41 {
     font-size: 32px;
     line-height: 30px;
   }
@@ -1991,6 +2049,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .construction-vn-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .construction-vn-content5 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2018,27 +2079,15 @@
     height: 139px;
   }
   .construction-vn-navbar {
-    height: auto;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .construction-vn-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .construction-vn-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .construction-vn-mobile-menu {
     padding: 16px;
@@ -2080,6 +2129,12 @@
     font-style: normal;
     font-weight: 500;
   }
+  .construction-vn-text {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
   .construction-vn-development1 {
     color: var(--dl-color-gray-black);
     font-size: 16px;
@@ -2111,15 +2166,16 @@
   .construction-vn-reference-projects {
     width: 100%;
     height: auto;
+    margin-top: var(--dl-space-space-sixunits);
     align-items: center;
-    padding-top: var(--dl-space-space-fourunits);
+    padding-top: 0px;
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .construction-vn-header {
     color: var(--dl-color-gray-black);
-    font-size: 40px;
+    font-size: 27px;
     align-self: center;
     font-style: normal;
     margin-top: var(--dl-space-space-twounits);
@@ -2139,7 +2195,7 @@
   }
   .construction-vn-header1 {
     color: rgb(53, 43, 42);
-    font-size: 32px;
+    font-size: 27px;
     font-style: normal;
     font-family: Cormorant Infant;
     font-weight: 700;
@@ -2172,6 +2228,9 @@
   .construction-vn-sf {
     width: 100%;
   }
+  .construction-vn-header2 {
+    font-size: 27px;
+  }
   .construction-vn--flogo {
     width: 100%;
     height: auto;
@@ -2199,6 +2258,9 @@
   .construction-vn-hci {
     width: 100%;
   }
+  .construction-vn-header3 {
+    font-size: 27px;
+  }
   .construction-vn-kendalogo1 {
     width: 100%;
     height: auto;
@@ -2225,6 +2287,9 @@
   }
   .construction-vn-grand-ocean {
     width: 100%;
+  }
+  .construction-vn-header4 {
+    font-size: 27px;
   }
   .construction-vn--adamslogo {
     width: var(--dl-size-size-xxlarge);
@@ -2260,19 +2325,36 @@
   .construction-vn-caption4 {
     color: rgb(255, 255, 255);
   }
-  .construction-vn-text47 {
+  .construction-vn-text52 {
     text-decoration: underline;
   }
-  .construction-vn-text51 {
+  .construction-vn-text56 {
     text-decoration: underline;
+  }
+  .construction-vn-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .construction-vn-content5 {
+    width: 450px;
   }
   .construction-vn-footer1 {
-    width: 308px;
+    width: 300px;
   }
   .construction-vn-caption5 {
     font-size: 9px;
   }
   .construction-vn-links2 {
-    padding-left: var(--dl-space-space-threeunits);
+    width: auto;
+    padding-left: var(--dl-space-space-twounits);
+  }
+  .construction-vn-fit-out4 {
+    color: var(--dl-color-gray-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .construction-vn-link5 {
+    text-decoration: none;
   }
 }

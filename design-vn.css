@@ -66,7 +66,8 @@
   max-width: 1440px;
   align-self: center;
   align-items: center;
-  padding-top: 11px;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: space-between;
 }
 .design-vn-container1 {
@@ -1757,7 +1758,7 @@
 .design-vn-find {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
-  height: 422px;
+  height: auto;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -1795,31 +1796,58 @@
   font-family: Karla;
   line-height: 24px;
 }
-.design-vn-text103 {
+.design-vn-text105 {
   text-decoration: underline;
 }
-.design-vn-text107 {
+.design-vn-text109 {
   text-decoration: underline;
 }
-.design-vn-find1 {
+.design-vn-contact-link {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.design-vn-email {
   font-style: normal;
+  text-align: center;
   transition: 0.3s;
   font-weight: 500;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: 56px;
+  border-radius: 16px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(250, 216, 122);
 }
-.design-vn-find1:hover {
+.design-vn-email:hover {
+  opacity: 0.5;
+}
+.design-vn-call {
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(250, 216, 122);
+}
+.design-vn-call:hover {
   opacity: 0.5;
 }
 .design-vn-footer {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1904,7 +1932,6 @@
   text-align: center;
   font-weight: 500;
   padding-left: 16px;
-  text-decoration: underline;
 }
 .design-vn-industrial1 {
   color: var(--dl-color-gray-white);
@@ -1916,7 +1943,6 @@
   text-align: center;
   font-weight: 500;
   padding-left: 16px;
-  text-decoration: underline;
 }
 .design-vn-development4 {
   color: var(--dl-color-gray-white);
@@ -1999,14 +2025,9 @@
   .design-vn-content {
     height: 506px;
   }
-  .design-vn-navbar {
-    height: auto;
-    align-items: flex-start;
-  }
   .design-vn-logo {
     left: 0px;
     bottom: 3px;
-    height: var(--dl-size-size-small);
   }
   .design-vn-links {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -2054,6 +2075,12 @@
     padding-bottom: 2px;
   }
   .design-vn-industrial {
+    color: var(--dl-color-gray-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .design-vn-text {
     color: var(--dl-color-gray-black);
     font-size: 20px;
     font-style: normal;
@@ -2323,6 +2350,12 @@
   .design-vn-header13 {
     color: rgb(255, 255, 255);
   }
+  .design-vn-email {
+    border-radius: 90px;
+  }
+  .design-vn-call {
+    border-radius: 90px;
+  }
   .design-vn-footer {
     padding-left: var(--dl-space-space-sixunits);
     padding-right: var(--dl-space-space-sixunits);
@@ -2381,7 +2414,7 @@
   .design-vn-logo {
     left: 0px;
     bottom: 7px;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     align-self: flex-start;
   }
@@ -2429,6 +2462,12 @@
     text-decoration: none;
   }
   .design-vn-industrial {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .design-vn-text {
     color: var(--dl-color-gray-black);
     font-size: 16px;
     font-style: normal;
@@ -2555,15 +2594,15 @@
     font-size: 32px;
     line-height: 30px;
   }
-  .design-vn-text025 {
-    font-size: 32px;
-    line-height: 30px;
-  }
-  .design-vn-text026 {
-    font-size: 32px;
-    line-height: 30px;
-  }
   .design-vn-text027 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .design-vn-text028 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .design-vn-text029 {
     font-size: 32px;
     line-height: 30px;
   }
@@ -2751,6 +2790,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .design-vn-contact-link {
+    gap: var(--dl-space-space-unit);
+  }
   .design-vn-content13 {
     width: 650px;
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2783,27 +2825,15 @@
     height: 625px;
   }
   .design-vn-navbar {
-    height: auto;
+    padding: var(--dl-space-space-unit);
     position: 0px;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .design-vn-logo {
-    top: 0px;
+    top: 16px;
     left: 0px;
-    width: auto;
-    height: var(--dl-size-size-small);
+    height: 72px;
     position: absolute;
     padding-left: 0px;
-  }
-  .design-vn-hamburger {
-    width: auto;
-    height: auto;
-    align-self: flex-start;
-    padding-top: var(--dl-space-space-unit);
-    border-color: var(--dl-color-gray-white);
   }
   .design-vn-mobile-menu {
     padding: 16px;
@@ -2840,6 +2870,12 @@
     flex-wrap: wrap;
   }
   .design-vn-industrial {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .design-vn-text {
     color: var(--dl-color-gray-black);
     font-size: 16px;
     font-style: normal;
@@ -3207,19 +3243,36 @@
   .design-vn-caption08 {
     color: rgb(255, 255, 255);
   }
-  .design-vn-text103 {
+  .design-vn-text105 {
     text-decoration: underline;
   }
-  .design-vn-text107 {
+  .design-vn-text109 {
     text-decoration: underline;
+  }
+  .design-vn-contact-link {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .design-vn-content13 {
+    width: 450px;
   }
   .design-vn-footer1 {
-    width: 308px;
+    width: 300px;
   }
   .design-vn-caption09 {
     font-size: 9px;
   }
   .design-vn-links2 {
-    padding-left: var(--dl-space-space-threeunits);
+    width: auto;
+    padding-left: var(--dl-space-space-twounits);
+  }
+  .design-vn-fit-out4 {
+    color: var(--dl-color-gray-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .design-vn-link2 {
+    text-decoration: none;
   }
 }
